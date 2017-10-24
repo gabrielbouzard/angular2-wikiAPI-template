@@ -1,0 +1,9 @@
+<nav>
+	<a routerLink="/" routerLinkActive="active">Hide Search History</a>
+</nav>
+<!-- Routed views go here -->
+<router-outlet></router-outlet>
+
+<p>
+	<li style="list-style: none" *ngFor="let search of searchHistory">{{ search }}</li>
+</p>
